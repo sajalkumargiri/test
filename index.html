@@ -60,6 +60,27 @@
     <script type="text/javascript" src="http://latex.codecogs.com/js/eq_config.js" ></script>
     <script type="text/javascript" src="http://latex.codecogs.com/js/eq_editor-lite-18.js" ></script>
   </head>
+
+<head>
+  <style>
+    /* Style for the image container */
+    .image-container {
+      display: flex; /* Use flexbox layout */
+      justify-content: space-between; /* Distribute images evenly */
+      align-items: center; /* Center items vertically */
+    }
+
+    /* Style for the images */
+    .image-container img {
+      width: calc(100% / 3 - 10px); /* Set width for each image */
+      max-width: 100%; /* Ensure images do not exceed container width */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: 5px; /* Add some space between images */
+    }
+  </style>
+</head>
+  
+  
   <body>
     <div id="top_sec">
       <!-- NAVIGATION -->
@@ -235,13 +256,13 @@
         
         <!-- 3-COLUMN SECTION LOGO -->
         <div class="row">
-            <div class="col-sm-4 text-center">
+            <div class="image container">
                 <img src="fig/logo1_im.png" alt="logo1_im">
             </div>
-            <div class="col-sm-4 text-center">
+            <div class="image container">
                   <img src="fig/logo2_im.png" alt="logo2_im">
             </div>
-            <div class="col-sm-4 text-center">
+            <div class="image container">
                   <img src="fig/logo3_im.png" alt="logo3_im">
             </div>
           </div>
