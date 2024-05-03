@@ -264,7 +264,7 @@
           <hr class="light-90">
         </div>
         <div class="row">
-        <div class="col-12 social_1l align-items-center text-center">
+        <div class="col-12>
             <p class="lead">
                 I'm currently working as a postdoctoral research associate at Northwestern University in the group of Prof. George C. Schatz. 
                 In the Schatz group, I am developing methods to study entangled two-photon absorption of molecules and plasmon-driven chemistry.
@@ -277,50 +277,11 @@
             </p>
 
           </div>
-          <div class="col-sm-6 text-center">
-            <a href="https://github.com/lf-santos/dwsimopt" target="_blank">
-              <img src="/fig/vid_pyDWSIMopt_x4.gif" alt="Gif of dwsimopt in action" style="width: 100%;">
-            </a>
-          </div>
-          <h4>Mathematical Background</h4>
-          <p style="padding-left: 2rem; padding-right: 2rem;">
-            Although very efficient to describe in details complex systems that would otherwise have to be simplified or approximated, black-box process simulators lack the symbolic formulation of the process model equations 
-            and the analytical derivatives that are useful for optimization, for example <a href="https://doi.org/10.1016/j.ces.2021.116699" target="_blank">[1]</a>.
-            <!--The use of simulation may also introduce noise to the calculations due to convergence and approximations of numerical methods, which can 
-            jeopardize the calculation of accurate approximate derivatives and, therefore, the use of gradient-based optimization methods directly <a href="https://doi.org/10.1002/aic.11579" target="_blank">[1]</a>. 
-            Also, the lack of analytical formulations of the optimization problem prevents the derivation of rigorous upper and lower bounds of the functions that are used for deterministic global optimization
-            <a href="https://doi.org/10.1007/s11590-016-1028-2" target="_blank">[2]</a>. In that sense, -->
-            The optimization models that require simulations to calculate the objective function and/or constraints are often referred to as 
-            simulation optimization problem <a href="https://doi.org/10.1007/s10479-015-2019-x" target="_blank">[2]</a>. A simplified version of this class of problems can be described as to find an 
-            <img src="https://latex.codecogs.com/svg.latex?\mathbf{x}^*\in\mathbb{R}^n" title="\mathbf{x}^*\in\mathbb{R}^n" style="max-height: 0.8em; vertical-align:baseline;"/> that solves globally the following constrained problem 
-            <br>
-            <img src="https://latex.codecogs.com/svg.latex?\begin{align*}&space;\min_{\mathbf{x}\in\mathcal{D}}\&space;\&space;\&space;&f(\mathbf{x})\\&space;\text{s.t.}\&space;\&space;\&space;&\mathbf{g}(\mathbf{x})\le&space;0&space;\end{align*}" 
-                 title="\begin{align*} \min_{\mathbf{x}\in\mathcal{D}}\ \ \ &f(\mathbf{x})\\ \text{s.t.}\ \ \ &\mathbf{g}(\mathbf{x})\le 0 \end{align*}" 
-                 style="max-height: 5.5rem; padding: 1rem"/>
-            <br>
-            in which the objective function <img src="https://latex.codecogs.com/svg.latex?f:\mathbb{R}^n\mapsto\mathbb{R}" style="max-height: 1em;"/>
-            and constraints <img src="https://latex.codecogs.com/svg.latex?g:\mathbb{R}^n\mapsto\mathbb{R}^q" style="max-height: 1em;"/> are somewhat expensive to calculate, slightly noisy, and black-box functions.
-          </p>
-          <br clear="all">
-          <h4>Installation</h4>
-          <span style="padding-left: 2rem; padding-right: 2rem;">
-            Install the latest version of <code>dwsimopt</code> via pip:
-            <pre class="brush: python" style="padding: 0.5rem; margin: 1rem; border-color: gray; border-width: 0.1rem; border-style: solid; border-radius: 5px;">pip install dwsimopt</pre>
-            or clone and install it from the github repository:
-            <pre class="brush: python" style="padding: 0.5rem; margin: 1rem; border-color: gray; border-width: 0.1rem; border-style: solid; border-radius: 5px;">git clone https://github.com/lf-santos/dwsimopt.git<br>cd dwsimopt<br>python setup.py install</pre>
-            Make sure you have the open-source chemical process simulator <a href="https://dwsim.inforside.com.br/new/" target="blank">DWSIM v7.0</a> installed into your machine. 
-            Navegate throught the jupyter notebook examples. Use the <code>SimulationOptimization</code> class to embed your <code>DMSWIM</code> simulation into Python.
-            Add degrees of freedom, objective function and constraints from your simulation optimization problem with the <code>py2dwisim</code> python-dwsim data exchange interface. 
-            Solve the problem with a suitable optimization solver (surrogate-based optimization or global optimization meta-heuristics recommended).
-          </span>
-          <div class="col-12 social text-center">
-            <a href="https://github.com/lf-santos/dwsimopt" target="blank" title="https://github.com/lf-santos/dwsimopt"><i class="fab fa-github"></i></a>
-            <a href="https://dwsimopt.readthedocs.io/en/latest/" target="blank" title="https://dwsimopt.readthedocs.io/en/latest/"><img src="./fig/readthedocs-icon.svg" alt="ReadTheDocs-icon"></a>
-            <a href="mailto:lfs.francisco.95@gmail.com" target="blank" title="mailto:lfs.francisco.95@gmail.com"><i class="fa fa-envelope"></i></a>
-          </div>
+
         </div>
       </div>
     </div>
+    
     <!-- PROJECTS -->
     <div id="projects">
       <div class="container-fluid padding">
